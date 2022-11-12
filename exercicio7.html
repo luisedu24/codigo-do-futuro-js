@@ -1,0 +1,24 @@
+<script>
+	let total = 0;
+    let media = 0;
+    let menu = prompt(`Bem vindo(a) ao Sistema de Cadastro de Alunos!
+    	             Para comecarmos, digite a opcao desejada:
+    	             1) Cadastrar aluno.
+                     2) Relatório de alunos.`);
+    if (menu == '1'){
+    	let nome = prompt(`Digite o nome do aluno a ser cadastrado: `);
+    	let matricula = prompt(`Digite o a matricula do aluno: `);
+    	let qtd = parseInt(prompt(`Digite a quantidade notas que deseja inserir: `));
+
+    	for (let i = 1; i<=qtd; i++ ){
+
+    	    let notas = parseFloat(prompt(`Digite as notas do aluno: `));
+    	    total+=notas;
+        }
+        media = total/qtd;
+
+    }
+
+    alert(media);
+
+</script>
